@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    margin: 0;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    line-height: 1.5em;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+
+h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.header {
+    background: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__nav li {
+    list-style-type: none;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header__nav a {
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: .5s ease;
+}
+
+.header__nav a:hover {
+    color: white
+}
+
+.header__nav a:active {
+    position: relative;
+    top: 1px;
+}
+
+.main {
+    font-weight: 200;
+    letter-spacing: .08em;
+    margin: 70px auto;
+    width: 90%;
+}
+
+.main h2 {
+    font-size: 22px;
+}
+
+.main h4 {
+    margin: 12px 0;
+}
+
+.main p {
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.documentario {
+    margin: 25px auto;
+    text-align: justify;
+}
+
+.documentario-frame {
+    margin: 20px auto;
+}
+
+#minidocs {
+    text-align: center;
+}
+
+#gritando {
+    text-align: center;
+}
+
+.legenda-video p {
+    text-align: justify;
+}
+
+.legenda-video h4 {
+    text-align: center;
+}
+
+.btn-voltar {
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    color: darkslategrey;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+}
+
+@media screen and (min-width: 375px) {
+    .main {
+        margin: 0 10px;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav ul {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .header__nav a {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+    img {
+        width: auto;
+    }
+    iframe {
+        width: 100%;
+        height: 230px;
+    }
+    .main {
+        margin: 70px 30px;
+        text-align: left;
+    }
+    .main h2 {
+        font-size: 26px;
+    }
+    .main h4 {
+        margin: 0;
+    }
+    .documentario-img {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    .documentario-frame {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        grid-gap: 15px;
+        align-items: start;
+    }
+    .legenda-video {
+        align-self: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        margin: 70px auto;
+        width: 70%;
+        text-align: left;
+    }
+    .legenda-video h4 {
+        text-align: justify;
+    }
+    .documentario-frame {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        align-items: start;
+    }
+    img {
+        width: 500px;
+    }
+    iframe {
+        width: 500px;
+        height: 285px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main {
+        margin: 70px auto;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .main {
+        margin: 70px auto;
+        width: 40%;
+        text-align: left;
+    }
+}

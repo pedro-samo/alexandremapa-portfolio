@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@500&display=swap');
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    margin: 0;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    line-height: 1.5em;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    background: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__nav li {
+    list-style-type: none;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header__nav a {
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: .5s ease;
+}
+
+.header__nav a:hover {
+    color: white
+}
+
+.header__nav a:active {
+    position: relative;
+    top: 1px;
+}
+
+.hero {
+    padding-top: 15px;
+    background: url(../imagens/SemTítulo-1.png);
+    height: 55vh;
+    max-width: 100%;
+    background-position: right 0 top 15px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: .3em;
+    line-height: 1.2em;
+}
+
+.hero h2 {
+    font-size: .8em;
+    margin-top: 1px;
+    font-family: 'Signika', sans-serif;
+    letter-spacing: .1em;
+    font-weight: lighter;
+}
+
+.sobre {
+    margin: -60px 10px 10px 10px;
+}
+
+.sobre__imagem_2 {
+    display: none;
+}
+
+.sobre p {
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Signika', sans-serif;
+    letter-spacing: .1em;
+    line-height: 1.7em;
+}
+
+.trabalho {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trabalho h2 {
+    color: white;
+    font-family: 'Palanquin Dark', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: .3em;
+}
+
+.trabalho__thumb {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+
+.trabalho_thumb__img {
+    opacity: 1;
+    background-color: black;
+    transition: ease .5s;
+}
+
+.trabalho_thumb__img:hover {
+    opacity: .5;
+}
+
+.trabalho__thumb img {
+    display: block;
+    width: 100%;
+}
+
+.contato {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato h2 {
+    color: white;
+    font-family: 'Palanquin Dark', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: .3em;
+}
+
+.contato__div__infos {
+    line-height: 1em;
+}
+
+input,
+label,
+textarea,
+select {
+    width: 60%;
+}
+
+input,
+textarea,
+select {
+    background: #efefef;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+}
+
+.form-button {
+    width: 80px;
+    margin-top: 1px;
+    height: 6%;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: rgb(212, 212, 212);
+    transition: all 1s;
+}
+
+::placeholder {
+    font-family: 'Signika', sans-serif;
+}
+
+.fab {
+    color: white;
+    font-size: 30px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    color: darkslategrey;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+}
+
+@media screen and (min-width: 375px) {
+    .sobre {
+        margin: -40px 10px 15px 15px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .header__nav a {
+        font-size: 16px;
+    }
+    .hero {
+        height: 65vh;
+    }
+    .sobre {
+        margin: -40px 20px 20px 20px;
+    }
+    .trabalho {
+        margin: 50px 0;
+    }
+    .contato {
+        margin: 50px 0;
+    }
+    .contato__div__infos {
+        line-height: 1.0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav ul {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .header__nav a {
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .hero {
+        height: 90vh;
+        padding-top: 25px;
+    }
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    .hero h2 {
+        font-size: 1.6em;
+    }
+    .sobre {
+        margin: -10px 10px 30px 30px;
+    }
+    .sobre__imagem_1 {
+        display: inline-block;
+        width: 48%;
+        margin-right: 2%;
+    }
+    .sobre__imagem_2 {
+        width: 48%;
+        display: inline-block;
+    }
+    .sobre p {
+        font-size: 16px;
+    }
+    .trabalho {
+        margin: 20px 30px;
+    }
+    .trabalho__thumb {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .contato__div {
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: 1;
+        grid-gap: 25px;
+    }
+    .contato__div form {
+        text-align: right;
+    }
+    .contato__div__infos {
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__nav ul {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .header__nav a {
+        padding: 20px 0;
+        font-size: 22px;
+    }
+    .hero {
+        height: 100vh;
+        padding-top: 25px;
+    }
+    .hero h1 {
+        font-size: 4em;
+        margin-bottom: .2em;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .sobre {
+        margin: 50px 100px;
+    }
+    .sobre p {
+        font-size: 16px;
+    }
+    .trabalho {
+        margin-top: 35px;
+    }
+    .trabalho h2 {
+        font-size: 42px;
+    }
+    .trabalho__thumb {
+        margin: 0 5px;
+    }
+    .trabalho__thumb {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .contato {
+        margin-top: 35px;
+    }
+    .contato h2 {
+        font-size: 42px;
+    }
+    input,
+    label,
+    textarea,
+    select {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sobre {
+        margin: 0 100px;
+    }
+    .trabalho {
+        margin-top: 55px;
+    }
+    .contato {
+        margin-top: 55px;
+    }
+    .trabalho__thumb {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .header__nav ul {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .header__nav a {
+        padding: 30px 0;
+        font-size: 26px;
+    }
+    .hero {
+        height: 100vh;
+        padding-top: 25px;
+    }
+    .hero h1 {
+        font-size: 6em;
+        margin-bottom: .5em;
+    }
+    .hero h2 {
+        font-size: 4em;
+    }
+    .sobre {
+        margin: 40px 450px;
+    }
+    .sobre p {
+        font-size: 16px;
+    }
+    .trabalho {
+        margin-top: 75px;
+    }
+    .trabalho h2 {
+        font-size: 42px;
+    }
+    .trabalho__thumb {
+        margin: 30px 200px;
+    }
+    .trabalho__thumb {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .contato {
+        margin-top: 75px;
+    }
+    .contato h2 {
+        font-size: 42px;
+    }
+    input,
+    label,
+    textarea,
+    select {
+        width: 70%;
+    }
+}
