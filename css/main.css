@@ -37,9 +37,14 @@
     }
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(12, 12, 12);
-    margin: 0;
     color: white;
     font-family: 'Signika', sans-serif;
     line-height: 1.5em;
@@ -77,8 +82,8 @@ img {
 .header__nav a {
     padding: 15px 0;
     text-transform: uppercase;
-    color: rgb(51, 51, 51);
-    font-size: 14px;
+    color: rgb(78, 78, 78);
+    font-size: 16px;
     text-decoration: none;
     display: block;
     transition: .5s ease;
@@ -94,13 +99,11 @@ img {
 }
 
 .hero {
-    padding-top: 15px;
     background: url(../imagens/SemTítulo-1.png);
-    height: 55vh;
+    height: 400px;
     max-width: 100%;
-    background-position: right 0 top 15px;
-    margin-bottom: 20px;
-    background-size: contain;
+    background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
     color: white;
@@ -145,11 +148,12 @@ img {
 }
 
 .trabalho {
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 
 .trabalho h2 {
+    margin: 20px;
     color: white;
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
@@ -180,11 +184,12 @@ img {
 }
 
 .contato {
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 
 .contato h2 {
+    margin: 20px;
     color: white;
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
@@ -193,7 +198,7 @@ img {
 }
 
 .contato__div__infos {
-    line-height: 1em;
+    line-height: 2rem;
 }
 
 input,
@@ -245,18 +250,10 @@ footer {
     font-family: 'Signika', sans-serif;
 }
 
-@media screen and (min-width: 375px) {
-    .sobre {
-        margin: -40px 10px 15px 15px;
-    }
-}
 
 @media screen and (min-width: 425px) {
     .header__nav a {
         font-size: 16px;
-    }
-    .hero {
-        height: 65vh;
     }
     .sobre {
         margin: -40px 20px 20px 20px;
@@ -266,9 +263,6 @@ footer {
     }
     .contato {
         margin: 50px 0;
-    }
-    .contato__div__infos {
-        line-height: 1.0;
     }
 }
 
@@ -282,7 +276,9 @@ footer {
         font-size: 18px;
     }
     .hero {
-        height: 90vh;
+        padding: 0 20px;
+        max-width: 100%;
+        height: 60vh;
         padding-top: 25px;
     }
     .hero h1 {
@@ -292,16 +288,12 @@ footer {
         font-size: 1.6em;
     }
     .sobre {
-        margin: -10px 10px 30px 30px;
+        margin: 0 20px;
     }
     .sobre__imagem_1 {
         display: inline-block;
         width: 48%;
         margin-right: 2%;
-    }
-    .sobre__imagem_2 {
-        width: 48%;
-        display: inline-block;
     }
     .sobre p {
         font-size: 16px;
@@ -312,26 +304,10 @@ footer {
     .trabalho__thumb {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-    .contato__div {
-        margin: 0 10px;
-        display: grid;
-        grid-template-columns: 1fr 0.8fr;
-        grid-template-rows: 1;
-        grid-gap: 25px;
-    }
-    .contato__div form {
-        text-align: right;
-    }
-    .contato__div__infos {
-        text-align: left;
-        font-size: 18px;
-    }
+    
 }
 
 @media screen and (min-width: 1024px) {
-    body{
-        background-color: rgb(12, 12, 12);
-    }
     .header__nav a {
         padding: 20px 0;
         font-size: 22px;
@@ -339,12 +315,15 @@ footer {
     }
     .desktop{
         margin: 0 auto;
-        width: 70%;
-        background-color:  rgb(12, 12, 12);
+        width: 90%;
     }
+
     .hero {
         height: 100vh;
-        padding-top: 25px;
+        max-width: 100%;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .hero h1 {
         font-size: 4em;
@@ -354,16 +333,18 @@ footer {
         font-size: 2em;
     }
     .sobre {
-        margin: 20px 100px;
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
     }
     .sobre p {
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: 18px;
     }
     .sobre__imagem{
-        width: 80%;
+        width: 70%;
     }
     .trabalho {
         margin: 35px 0;
@@ -375,12 +356,21 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    .contato {
-        margin-top: 45px;
-    }
+
     .contato h2 {
         font-size: 38px;
     }
+
+    .contato__div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contato__div__infos{
+        text-align: left;
+    }
+
     input,
     label,
     textarea,
