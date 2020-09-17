@@ -123,20 +123,30 @@ h2 {
 }
 
 .documentario {
-    margin: 25px auto;
+    padding: 25px 0;
+    margin: 15px auto;
     text-align: justify;
 }
 
+.documentario-video{
+    margin: 5px auto;
+}
+
 .documentario-frame {
+    padding: 20px 0;
     margin: 20px auto;
 }
 
-#minidocs {
-    text-align: center;
+#mini-docs {
+    padding: 10px 0;
+    margin: 40px auto;
+    text-align: justify;
 }
 
 #gritando {
-    text-align: center;
+    padding: 10px 0;
+    margin: 40px auto; 
+    text-align: justify;
 }
 
 .legenda-video p {
@@ -144,7 +154,7 @@ h2 {
 }
 
 .legenda-video h4 {
-    text-align: center;
+    text-align: justify;
 }
 
 .btn-voltar {
@@ -231,7 +241,6 @@ footer {
         text-align: justify;
     }
     .documentario-frame {
-        margin-bottom: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
