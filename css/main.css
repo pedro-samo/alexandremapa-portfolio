@@ -115,7 +115,7 @@ img {
 .hero h1 {
     font-family: 'Palanquin Dark', sans-serif;
     margin: 0 10px 0 0;
-    padding: 0;
+    padding: 10px;
     text-transform: uppercase;
     font-size: 2em;
     letter-spacing: .3em;
@@ -123,6 +123,7 @@ img {
 }
 
 .hero h2 {
+    padding: 10px;
     font-size: .8em;
     margin-top: 1px;
     font-family: 'Signika', sans-serif;
@@ -131,12 +132,13 @@ img {
 }
 
 .sobre {
-    margin: -60px 10px 10px 10px;
+    margin-top: -40px;
+    padding: 10px 35px;
 }
 
 .sobre p {
     text-align: justify;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Signika', sans-serif;
     letter-spacing: .1em;
     line-height: 1.7em;
@@ -148,7 +150,7 @@ img {
 }
 
 .trabalho {
-    margin: 20px auto;
+    margin: 25px auto;
     text-align: center;
 }
 
@@ -184,7 +186,8 @@ img {
 }
 
 .contato {
-    margin: 20px auto;
+    padding: 10px 0;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -205,7 +208,7 @@ input,
 label,
 textarea,
 select {
-    width: 60%;
+    width: 80%;
 }
 
 input,
@@ -219,9 +222,10 @@ select {
 }
 
 .form-button {
-    width: 80px;
-    margin-top: 1px;
+    width: 100px;
     height: 6%;
+    justify-content: center;
+    align-content: center;
     text-align: center;
 }
 
@@ -251,20 +255,6 @@ footer {
 }
 
 
-@media screen and (min-width: 425px) {
-    .header__nav a {
-        font-size: 16px;
-    }
-    .sobre {
-        margin: -40px 20px 20px 20px;
-    }
-    .trabalho {
-        margin: 50px 0;
-    }
-    .contato {
-        margin: 50px 0;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .header__nav ul {
@@ -333,21 +323,23 @@ footer {
         font-size: 2em;
     }
     .sobre {
-        margin: 20px auto;
+        margin: 50px auto;
+        padding: 80px 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     .sobre p {
-        margin-top: 20px;
+        margin-left: 50px;
+
         font-size: 18px;
     }
     .sobre__imagem{
-        width: 70%;
+        width: 55%;
     }
     .trabalho {
-        margin: 35px 0;
+        margin: 50px 0;
     }
     .trabalho h2 {
         font-size: 38px;
@@ -355,6 +347,10 @@ footer {
     .trabalho__thumb {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .contato{
+        padding: 50px 0;
     }
 
     .contato h2 {
@@ -371,32 +367,12 @@ footer {
         text-align: left;
     }
 
-    input,
-    label,
-    textarea,
-    select {
-        width: 70%;
-    }
+
     .footter{
         margin-top: 0;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .sobre {
-        margin: 0 100px;
-    }
-    .trabalho {
-        margin-top: 55px;
-    }
-    .contato {
-        margin-top: 55px;
-    }
-    .trabalho__thumb {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
 
 @media screen and (min-width: 2560px) {
     .header__nav ul {
