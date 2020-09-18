@@ -1,4 +1,4 @@
-$ git status
-# Exclude any PSD/AI source
-#*.psd
-#*.ai
+
+Exclude any PSD/AI source
+*.psd
+*.ai
