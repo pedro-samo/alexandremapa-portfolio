@@ -171,15 +171,29 @@ img {
 }
 
 .trabalho_thumb__img {
+    position: relative;
     opacity: 1;
     transition: all .8s;
-    filter: grayscale(150%);
     -webkit-filter: grayscale(100%);
 }
 
 .trabalho_thumb__img:hover {
     filter: none;
     -webkit-filter: none;
+    
+}
+.trabalho_thumb__img span{
+    line-height: 15px;
+    background-color: black;
+    padding: 2px 5px;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.98);
 }
 
 .trabalho__thumb img {
@@ -295,6 +309,12 @@ footer {
     }
     .trabalho__thumb {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .trabalho_thumb__img span{
+        line-height: 24px;
+        padding: 10px 15px;
+        font-size: 22px;
+        white-space: nowrap;
     }
     
 }
