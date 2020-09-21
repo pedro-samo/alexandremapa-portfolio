@@ -172,12 +172,14 @@ img {
 
 .trabalho_thumb__img {
     opacity: 1;
-    background-color: black;
-    transition: ease .5s;
+    transition: all .8s;
+    filter: grayscale(150%);
+    -webkit-filter: grayscale(100%);
 }
 
 .trabalho_thumb__img:hover {
-    opacity: .5;
+    filter: none;
+    -webkit-filter: none;
 }
 
 .trabalho__thumb img {
