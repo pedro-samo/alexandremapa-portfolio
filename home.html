@@ -8,8 +8,7 @@
     <meta name="author" content="Pedro Morais">
     <meta name="keywords" content="audiovisual, edição, vídeo, corte, premiere">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Fonts -->
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -37,63 +36,58 @@
     <div class="desktop">
         <section class="sobre" id="sobre">
             <img class="sobre__imagem" src="imagens/foto1.jpg">
-            <p><strong>Alexandre Mapa</strong> é realizador audiovisual, com experiência na área de montagem e filmagem.
-                Formado no curso de Rádio, TV e Internet da Universidade Federal de Pernambuco, iniciou sua carreira
-                como montador na produtora audiovisual
-                Inntime. Ao longo de seis anos atuando como freelancer, realizou trabalhos nos formatos de
-                documentários, vídeos institucionais, publicitários, jornalísticos, aftermovies de eventos, vídeoaulas,
-                cobertura criativa de festivais de cinema,
-                making of, apresentações musicais, além de vídeos de conteúdo para mídias sociais. Atualmente exerce o
-                cargo de técnico de laboratório de vídeo na UNIP (Universidade Paulista), desempenhando as funções de
-                montagem, operação de câmera e direção de corte.</p>
+            <p><strong>Alexandre Mapa</strong> é realizador audiovisual, com experiência na área de montagem e filmagem. Formado no curso de Rádio, TV e Internet da Universidade Federal de Pernambuco, iniciou sua carreira como montador na produtora audiovisual
+                Inntime. Ao longo de seis anos atuando como freelancer, realizou trabalhos nos formatos de documentários, vídeos institucionais, publicitários, jornalísticos, aftermovies de eventos, vídeoaulas, cobertura criativa de festivais de cinema,
+                making of, apresentações musicais, além de vídeos de conteúdo para mídias sociais. Atualmente exerce o cargo de técnico de laboratório de vídeo na UNIP (Universidade Paulista), desempenhando as funções de montagem, operação de câmera e
+                direção de corte.</p>
         </section>
 
         <section class="trabalho" id="trabalho">
             <h2>Portfólio</h2>
             <div class="trabalho__thumb">
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/documentarios.html">
+                    <a href="/documentarios.html">
                         <span>Documentários</span>
                         <img src="imagens/thumb1.png">
                     </a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/festivaiscinema.html">
+                    <a href="/festivaiscinema.html">
                         <span>Festivais de Cinema</span>
                         <img src="imagens/thumb2.png">
                     </a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/institucionais.html">
+                    <a href="/institucionais.html">
                         <span>institucionais</span>
                         <img src="imagens/thumb3.png">
                     </a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/eventos.html">
+                    <a href="/eventos.html">
                         <span>Eventos</span>
                         <img src="imagens/thumb4.png">
                     </a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/publicitarios.html">
+                    <a href="/publicitarios.html">
                         <span>Publicitários</span>
                         <img src="imagens/thumb5.png">
                     </a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/videoaulas.html">
+                    <a href="/videoaulas.html">
                         <span>Vídeoaulas</span>
                         <img src="imagens/thumb6.png">
                     </a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/videosinstagram.html">
+                    <a href="/videosinstagram.html">
                         <span>Mídias Digitais</span>
                         <img src="imagens/thumb7.png"></a>
                 </div>
                 <div class="trabalho_thumb__img">
-                    <a href="http://alexandremapa.netlify.app/apresentacoesmusicais.html">
+                    <a href="/apresentacoesmusicais.html">
                         <span>Apresentações Musicais</span>
                         <img src="imagens/thumb8.png"></a>
                 </div>
@@ -102,12 +96,11 @@
         <section class="contato">
             <h2>Contato</h2>
             <div class="contato__div" id="contato">
-                <form class="contato__div__form" action="#" method="POST">
-                    <input type="text" name="nome" id="nome" placeholder="Seu Nome">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                    <textarea name="mensagem" placeholder="Sua Mensagem" id="mensagem" rows="5"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar" id="btn" class="form-button">
+                <form id="my-form" action="https://formspree.io/f/mwkwjqky" class="contato__div__form" method="POST">
+                    <input type="email" name="email" id="email" placeholder="E-mail" />
+                    <textarea type="text" name="message" placeholder="Sua Mensagem" id="mensagem" rows="5"></textarea>
+                    <button id="my-form-button" type="submit" value="Enviar" id="btn" class="form-button">Enviar</button>
+                    <p id="my-form-status"></p>
                 </form>
                 <div class="contato__div__infos">
                     <h3>Informações de contato:</h3>
@@ -128,5 +121,6 @@
 
 
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
 
 </body>
