@@ -388,6 +388,12 @@ footer {
         justify-content: center;
     }
 
+    .contato__div__form{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
     .contato__div__infos{
         text-align: left;
     }
