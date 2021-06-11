@@ -132,9 +132,13 @@ h2 {
     margin: 5px auto;
 }
 
+.documentario-video h2{
+    margin: 20px auto 0;
+}
+
 .documentario-frame {
     padding: 20px 0;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 #mini-docs {
@@ -220,7 +224,7 @@ footer {
         grid-gap: 15px;
     }
     .documentario-frame {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         display: grid;
         grid-template-columns: 1fr .8fr;
         grid-gap: 15px;
@@ -244,7 +248,8 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
-        align-items: start;
+        align-items: center;
+        margin-bottom: 10px;
     }
     img {
         width: 500px;
