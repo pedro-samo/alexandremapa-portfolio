@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
@@ -41,7 +41,7 @@ body {
     background-color: rgb(22, 22, 22);
     margin: 0;
     color: white;
-    font-family: 'Signika', sans-serif;
+    font-family: "Signika", sans-serif;
     line-height: 1.5em;
     -webkit-animation: fadeIn 1s ease-in-out;
     -moz-animation: fadeIn 1s ease-in-out;
@@ -59,7 +59,7 @@ iframe {
 }
 
 h2 {
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: "Palanquin Dark", sans-serif;
 }
 
 .header {
@@ -90,11 +90,11 @@ h2 {
     font-size: 14px;
     text-decoration: none;
     display: block;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .header__nav a:hover {
-    color: white
+    color: white;
 }
 
 .header__nav a:active {
@@ -104,7 +104,7 @@ h2 {
 
 .main {
     font-weight: 200;
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     margin: 70px auto;
     width: 90%;
 }
@@ -128,11 +128,11 @@ h2 {
     text-align: justify;
 }
 
-.documentario-video{
+.documentario-video {
     margin: 5px auto;
 }
 
-.documentario-video h2{
+.documentario-video h2 {
     margin: 20px auto 0;
 }
 
@@ -149,7 +149,7 @@ h2 {
 
 #gritando {
     padding: 10px 0;
-    margin: 40px auto; 
+    margin: 40px auto;
     text-align: justify;
 }
 
@@ -178,7 +178,7 @@ footer {
     color: darkslategrey;
     margin-top: 30px;
     text-align: center;
-    font-family: 'Signika', sans-serif;
+    font-family: "Signika", sans-serif;
 }
 
 @media screen and (min-width: 375px) {
@@ -226,7 +226,7 @@ footer {
     .documentario-frame {
         margin-bottom: 20px;
         display: grid;
-        grid-template-columns: 1fr .8fr;
+        grid-template-columns: 1fr 0.8fr;
         grid-gap: 15px;
         align-items: start;
     }
@@ -252,7 +252,7 @@ footer {
         margin-bottom: 10px;
     }
     img {
-        width: 500px;
+        width: 100%;
     }
     iframe {
         width: 100%;
